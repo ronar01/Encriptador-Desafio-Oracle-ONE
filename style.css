@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(fonts/Ubuntu-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor-primaria: #FFE5E5;
+    --cor-secundaria: #E0AED0;
+    --cor-terciaria: #AC87C5;
+    --cor-quaternaria: #756AB6;
+}
+
+body{
+    background: var(--cor-primaria);
+    background-image: url('images/fundo-com-formas-quadradas.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    padding-top: 150px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#textoContainer {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.textareas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+textarea {
+    width: 285px;
+    height: 290px;
+    color: black;
+    border-radius: 20px;
+    padding: 9px;
+    margin: 10px;
+}
+
+.aviso{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    color: var(--cor-quaternaria);
+    background-color: var(--cor-primaria);
+    margin: 10px;
+}
+.aviso-btn{
+    display: flex;
+    flex-direction: row;
+}
+
+.botao-copiar{
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quaternaria);
+}
+
+.botao-descript{
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-secundaria);
+}
+
+.icone {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px; /* Adicionar margem entre os ícones */
+}
+
+.footer {
+    position: relative;
+    height: 100px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer {
+    text-align: center; 
+}
+
+p {
+    margin-top: 10px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <main class="container">
+        <div id="textoContainer">
+            <h1 class="titulo">Encriptador de Texto</h1>
+            <br>
+            <textarea id="area-texto" placeholder="Insira o texto aqui!" rows="10" cols="30"></textarea>
+            <textarea id="area-texto-output" rows="10" cols="30" readonly></textarea>
+        </div>
+        <p class="aviso">Apenas letras minúsculas e sem acento!</p>
+        <div>
+            <button class="botao-cript" onclick="criptografar()">
+                Criptografar
+            </button>
+            <button class="botao-descript" onclick="descriptografar()">   
+                Descriptografar
+            </button>
+            <button class="botao-copiar" hidden onclick="copiar()">
+                Copiar
+            </button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-footer">
+            <a href="https://github.com/ronar01" target="_blank" ><img class="icone" src="images/github.png" alt="imagem-github"></a>
+            <a href="https://www.linkedin.com/in/ronaldy01/" target="_blank" ><img class="icone" src="images/redesocial.png" alt="imagem-linkedin"></a>
+            <br>
+            <p>Site desenvolvido por Rona</p>
+        </div>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
